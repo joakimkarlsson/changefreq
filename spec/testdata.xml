@@ -1,0 +1,989 @@
+<?xml version="1.0"?>
+<log>
+<logentry
+   revision="29">
+<author>ata</author>
+<date>2009-06-13T21:54:35.574593Z</date>
+<paths>
+<path
+   action="M">/app/views/tags/show.html.erb</path>
+<path
+   action="M">/config/routes.rb</path>
+<path
+   action="A">/public/images/rss.jpg</path>
+<path
+   action="M">/app/controllers/tags_controller.rb</path>
+<path
+   action="M">/app/models/video.rb</path>
+<path
+   action="A">/app/views/tags/feed.rxml</path>
+</paths>
+<msg>RSS feeds for the win</msg>
+</logentry>
+<logentry
+   revision="28">
+<author>ata</author>
+<date>2009-06-13T20:11:51.056875Z</date>
+<paths>
+<path
+   action="M">/app/models/recommender.rb</path>
+</paths>
+<msg>Use kick-ass SQL instead of ActiveRecord</msg>
+</logentry>
+<logentry
+   revision="27">
+<author>ata</author>
+<date>2009-06-13T17:56:04.753613Z</date>
+<paths>
+<path
+   action="M">/app/views/layouts/application.html.erb</path>
+</paths>
+<msg>Number of videos</msg>
+</logentry>
+<logentry
+   revision="26">
+<author>ata</author>
+<date>2009-06-13T17:40:29.781769Z</date>
+<paths>
+<path
+   action="M">/app/models/youtube_importer.rb</path>
+<path
+   action="M">/features/video_administration.feature</path>
+<path
+   action="M">/features/recommender.feature</path>
+<path
+   action="M">/app/models/video.rb</path>
+</paths>
+<msg>Import from a user works again</msg>
+</logentry>
+<logentry
+   revision="25">
+<author>ata</author>
+<date>2009-06-13T06:09:45.161933Z</date>
+<paths>
+<path
+   action="M">/app/models/recommender.rb</path>
+<path
+   action="M">/config/environment.rb</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="24">
+<author>ata</author>
+<date>2009-06-12T20:55:38.284867Z</date>
+<paths>
+<path
+   action="M">/app/models/recommender.rb</path>
+</paths>
+<msg>yo</msg>
+</logentry>
+<logentry
+   revision="23">
+<author>ata</author>
+<date>2009-06-12T20:19:56.067527Z</date>
+<paths>
+<path
+   action="M">/app/models/recommender.rb</path>
+<path
+   action="M">/config/environment.rb</path>
+</paths>
+<msg>Jo</msg>
+</logentry>
+<logentry
+   revision="22">
+<author>ata</author>
+<date>2009-06-12T19:51:52.335975Z</date>
+<paths>
+<path
+   action="M">/app/views/videos/show.html.erb</path>
+<path
+   action="M">/app/models/youtube_importer.rb</path>
+<path
+   action="M">/app/models/recommender.rb</path>
+<path
+   action="M">/db/schema.rb</path>
+<path
+   action="M">/features/recommender.feature</path>
+<path
+   action="M">/features/tag_video.feature</path>
+<path
+   action="M">/app/models/video.rb</path>
+</paths>
+<msg>Recommendations clickable</msg>
+</logentry>
+<logentry
+   revision="21">
+<author>ata</author>
+<date>2009-06-12T17:52:26.833389Z</date>
+<paths>
+<path
+   action="M">/app/models/youtube_importer.rb</path>
+</paths>
+<msg>include REXML was fscking up code trying to read comments.</msg>
+</logentry>
+<logentry
+   revision="20">
+<author>ata</author>
+<date>2009-06-12T17:34:53.070996Z</date>
+<paths>
+<path
+   action="M">/app/models/recommender.rb</path>
+<path
+   action="M">/app/controllers/tags_controller.rb</path>
+<path
+   action="M">/features/tag_video.feature</path>
+<path
+   action="M">/features/support/paths.rb</path>
+<path
+   action="M">/test/unit/recommender_test.rb</path>
+</paths>
+<msg>Multi taggar funkar</msg>
+</logentry>
+<logentry
+   revision="19">
+<author>ata</author>
+<date>2009-06-09T20:20:58.829826Z</date>
+<paths>
+<path
+   action="M">/app/models/recommender.rb</path>
+<path
+   action="M">/test/unit/recommender_test.rb</path>
+</paths>
+<msg>Added code for recommendations</msg>
+</logentry>
+<logentry
+   revision="18">
+<author>ata</author>
+<date>2009-06-09T19:47:44.164826Z</date>
+<paths>
+<path
+   action="M">/app/views/videos/show.html.erb</path>
+<path
+   action="M">/app/controllers/videos_controller.rb</path>
+<path
+   action="M">/app/models/recommender.rb</path>
+</paths>
+<msg>Added code for recommendations</msg>
+</logentry>
+<logentry
+   revision="17">
+<author>ata</author>
+<date>2009-06-08T20:53:20.756617Z</date>
+<paths>
+<path
+   action="D">/test/unit/type_test.rb</path>
+<path
+   action="M">/app/models/tag.rb</path>
+<path
+   action="M">/app/views/videos/show.html.erb</path>
+<path
+   action="M">/app/views/videos/_single_comment.html.erb</path>
+<path
+   action="M">/app/controllers/videos_controller.rb</path>
+<path
+   action="A">/app/models/recommender.rb</path>
+<path
+   action="M">/app/models/type.rb</path>
+<path
+   action="M">/features/recommender.feature</path>
+<path
+   action="D">/test/unit/tag_test.rb</path>
+<path
+   action="M">/app/models/video.rb</path>
+<path
+   action="M">/config/environment.rb</path>
+<path
+   action="D">/test/unit/youtube_importer_test.rb</path>
+<path
+   action="M">/features/step_definitions/all_steps.rb</path>
+<path
+   action="A">/test/unit/recommender_test.rb</path>
+</paths>
+<msg>Added code for recommendations</msg>
+</logentry>
+<logentry
+   revision="16">
+<author>ata</author>
+<date>2009-06-06T20:08:24.786557Z</date>
+<paths>
+<path
+   action="M">/features/video_administration.feature</path>
+<path
+   action="D">/features/comments.feature</path>
+</paths>
+<msg>Fixed tests</msg>
+</logentry>
+<logentry
+   revision="15">
+<author>ata</author>
+<date>2009-06-06T20:02:00.636119Z</date>
+<paths>
+<path
+   action="M">/app/views/videos/show.html.erb</path>
+<path
+   action="M">/app/controllers/videos_controller.rb</path>
+<path
+   action="M">/app/models/video.rb</path>
+<path
+   action="M">/</path>
+</paths>
+<msg>Some cleaning</msg>
+</logentry>
+<logentry
+   revision="14">
+<author>ata</author>
+<date>2009-06-02T21:31:07.011154Z</date>
+<paths>
+<path
+   action="M">/app/models/youtube_importer.rb</path>
+<path
+   action="M">/test/unit/video_test.rb</path>
+</paths>
+<msg>Fixade de sista testen</msg>
+</logentry>
+<logentry
+   revision="13">
+<author>ata</author>
+<date>2009-06-02T21:24:13.706145Z</date>
+<paths>
+<path
+   action="M">/app/controllers/sessions_controller.rb</path>
+<path
+   action="M">/app/models/youtube_importer.rb</path>
+<path
+   action="M">/test/unit/video_test.rb</path>
+<path
+   action="D">/test/functional/sessions_controller_test.rb</path>
+<path
+   action="M">/doc/stories</path>
+</paths>
+<msg>fixat nÃ¥gra test</msg>
+</logentry>
+<logentry
+   revision="12">
+<author>joakim</author>
+<date>2009-06-01T20:24:44.320061Z</date>
+<paths>
+<path
+   action="M">/app/controllers/videos_controller.rb</path>
+<path
+   action="M">/features/support/paths.rb</path>
+<path
+   action="M">/features/user_videos.feature</path>
+</paths>
+<msg>Added error handling when creating a new video with an invalid youtube id</msg>
+</logentry>
+<logentry
+   revision="11">
+<author>ata</author>
+<date>2009-05-31T21:36:48.953329Z</date>
+<paths>
+<path
+   action="M">/app/views/videos/show.html.erb</path>
+<path
+   action="M">/app/views/videos/comment.rjs</path>
+</paths>
+<msg>AJAX kommentarer FTW</msg>
+</logentry>
+<logentry
+   revision="10">
+<author>ata</author>
+<date>2009-05-31T21:20:11.824639Z</date>
+<paths>
+<path
+   action="M">/app/views/videos/show.html.erb</path>
+<path
+   action="A">/app/views/videos/_single_comment.html.erb</path>
+<path
+   action="M">/app/controllers/videos_controller.rb</path>
+<path
+   action="A">/app/views/videos/comment.rjs</path>
+<path
+   action="M">/app/models/comment.rb</path>
+<path
+   action="M">/config/routes.rb</path>
+</paths>
+<msg>AJAX kommentarer FTW</msg>
+</logentry>
+<logentry
+   revision="9">
+<author>ata</author>
+<date>2009-05-31T20:52:20.988080Z</date>
+<paths>
+<path
+   action="M">/app/views/videos/show.html.erb</path>
+<path
+   action="A">/test/unit/comment_test.rb</path>
+<path
+   action="M">/app/models/user.rb</path>
+<path
+   action="A">/db/migrate/20090531204637_add_user_to_comments.rb</path>
+<path
+   action="A">/app/models/comment.rb</path>
+<path
+   action="A">/db/migrate/20090531202252_create_comments.rb</path>
+<path
+   action="M">/db/schema.rb</path>
+<path
+   action="M">/app/models/video.rb</path>
+<path
+   action="A">/features/comments.feature</path>
+<path
+   action="A">/test/fixtures/comments.yml</path>
+</paths>
+<msg>LÃ¤sa kommentarer gÃ¥r bra. Ska snart fixa skrivandet av dem...</msg>
+</logentry>
+<logentry
+   revision="8">
+<author>ata</author>
+<date>2009-05-31T20:02:57.471558Z</date>
+<paths>
+<path
+   action="M">/features/login.feature</path>
+<path
+   action="M">/app/views/partials/_single_tag.html.erb</path>
+<path
+   action="M">/features/video_administration.feature</path>
+<path
+   action="D">/features/step_definitions/search_for_technique_steps.rb</path>
+<path
+   action="M">/features/support/env.rb</path>
+<path
+   action="D">/features/step_definitions/search_for_video_steps.rb</path>
+<path
+   action="D">/features/step_definitions/tag_video_steps.rb</path>
+<path
+   action="D">/features/step_definitions/list_uncategorized_videos_steps.rb</path>
+<path
+   action="D">/features/step_definitions/user_videos_steps.rb</path>
+<path
+   action="M">/app/models/video.rb</path>
+<path
+   action="A">/features/step_definitions/all_steps.rb</path>
+<path
+   action="D">/features/untag_video.feature</path>
+<path
+   action="M">/doc/stories</path>
+<path
+   action="D">/features/step_definitions/video_administration_steps.rb</path>
+</paths>
+<msg>stÃ¤dade testen lite</msg>
+</logentry>
+<logentry
+   revision="7">
+<author>ata</author>
+<date>2009-05-31T09:13:22.732030Z</date>
+<paths>
+<path
+   action="M">/app/controllers/sessions_controller.rb</path>
+<path
+   action="M">/features/support/env.rb</path>
+<path
+   action="M">/db/schema.rb</path>
+</paths>
+<msg>fixade testen</msg>
+</logentry>
+<logentry
+   revision="6">
+<author>ata</author>
+<date>2009-05-31T08:59:34.200459Z</date>
+<paths>
+<path
+   action="M">/app/views/videos/show.html.erb</path>
+<path
+   action="M">/app/models/youtube_importer.rb</path>
+<path
+   action="M">/app/controllers/videos_controller.rb</path>
+<path
+   action="M">/db/schema.rb</path>
+<path
+   action="A">/db/migrate/20090530213652_add_rating_to_video.rb</path>
+<path
+   action="M">/doc/stories</path>
+</paths>
+<msg>HÃ¤mtar och visar average rating</msg>
+</logentry>
+<logentry
+   revision="5">
+<author>ata</author>
+<date>2009-05-30T20:44:50.634234Z</date>
+<paths>
+<path
+   action="A">/features/login.feature</path>
+<path
+   action="M">/app/controllers/sessions_controller.rb</path>
+<path
+   action="M">/app/views/partials/_single_tag.html.erb</path>
+<path
+   action="M">/features/support/env.rb</path>
+<path
+   action="M">/db/schema.rb</path>
+<path
+   action="M">/features/search_for_video.feature</path>
+<path
+   action="M">/app/views/layouts/application.html.erb</path>
+<path
+   action="M">/db/migrate/20090527211600_add_flagged_to_video.rb</path>
+<path
+   action="M">/features/step_definitions/user_videos_steps.rb</path>
+<path
+   action="M">/features/support/paths.rb</path>
+<path
+   action="M">/features/untag_video.feature</path>
+<path
+   action="M">/db/migrate/20090527203500_add_isadmin_to_user.rb</path>
+</paths>
+<msg>Login puttar tillbaks till referer</msg>
+</logentry>
+<logentry
+   revision="4">
+<author>ata</author>
+<date>2009-05-30T20:04:49.805955Z</date>
+<paths>
+<path
+   action="M">/app/views/videos/show.html.erb</path>
+<path
+   action="A">/app/views/videos/untag.rjs</path>
+<path
+   action="M">/app/views/partials/_single_tag.html.erb</path>
+<path
+   action="M">/app/controllers/videos_controller.rb</path>
+<path
+   action="M">/app/controllers/tags_controller.rb</path>
+<path
+   action="M">/doc/stories</path>
+</paths>
+<msg>Delete tags ajaxifierat</msg>
+</logentry>
+<logentry
+   revision="3">
+<author>ata</author>
+<date>2009-05-30T19:05:50.239970Z</date>
+<paths>
+<path
+   action="M">/app/views/videos/show.html.erb</path>
+<path
+   action="M">/app/controllers/videos_controller.rb</path>
+<path
+   action="M">/app/controllers/tags_controller.rb</path>
+<path
+   action="M">/app/models/video.rb</path>
+</paths>
+<msg>Recommendations now find the 3 best matches</msg>
+</logentry>
+<logentry
+   revision="2">
+<author>ata</author>
+<date>2009-05-30T11:03:38.767548Z</date>
+<paths>
+<path
+   action="M">/tmp</path>
+<path
+   action="M">/log</path>
+<path
+   action="M">/db</path>
+<path
+   action="A">/.gems</path>
+<path
+   action="M">/app/models/video.rb</path>
+<path
+   action="M">/doc/stories</path>
+<path
+   action="M">/</path>
+</paths>
+<msg>Mindre stÃ¤dning</msg>
+</logentry>
+<logentry
+   revision="1">
+<author>ata</author>
+<date>2009-05-28T20:08:01.049484Z</date>
+<paths>
+<path
+   action="A">/db/migrate/20090524163105_add_types.rb</path>
+<path
+   action="A">/app/views/session</path>
+<path
+   action="A">/app/views/videos/find.html.erb</path>
+<path
+   action="A">/config/initializers/backtrace_silencers.rb</path>
+<path
+   action="A">/features/tag_wizard.feature</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/fixtures.yml</path>
+<path
+   action="A">/app/controllers/import_controller.rb</path>
+<path
+   action="A">/app/views/videos/new.html.erb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/install.rb</path>
+<path
+   action="A">/app/views/tags/edit.html.erb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/login.html.erb</path>
+<path
+   action="A">/app/views/wizard</path>
+<path
+   action="A">/script/runner</path>
+<path
+   action="A">/app/views/tags/new.html.erb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/controller.rb</path>
+<path
+   action="A">/config/environments/development.rb</path>
+<path
+   action="A">/test/fixtures/videos.yml</path>
+<path
+   action="A">/app/models/youtube_importer.rb</path>
+<path
+   action="A">/test/functional/tags_controller_test.rb</path>
+<path
+   action="A">/app/views/wizard/step3.html.erb</path>
+<path
+   action="A">/public/javascripts/prototype.js</path>
+<path
+   action="A">/app/views/videos/index.html.erb</path>
+<path
+   action="A">/app/views/import</path>
+<path
+   action="A">/test/fixtures</path>
+<path
+   action="A">/test/fixtures/users.yml</path>
+<path
+   action="A">/doc/stories</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/model_controller.rb</path>
+<path
+   action="A">/test/test_helper.rb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication</path>
+<path
+   action="A">/public/javascripts/effects.js</path>
+<path
+   action="A">/app/models</path>
+<path
+   action="A">/app/views/tags/index.js.erb</path>
+<path
+   action="A">/public/robots.txt</path>
+<path
+   action="A">/config</path>
+<path
+   action="A">/test/unit/video_test.rb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/mailer.rb</path>
+<path
+   action="A">/lib</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/functional_spec.rb</path>
+<path
+   action="A">/features/search_for_video.feature</path>
+<path
+   action="A">/script/cucumber</path>
+<path
+   action="A">/script/server</path>
+<path
+   action="A">/test/unit/tag_test.rb</path>
+<path
+   action="A">/app/models/video.rb</path>
+<path
+   action="A">/features</path>
+<path
+   action="A">/app/views/users</path>
+<path
+   action="A">/features/step_definitions/video_administration_steps.rb</path>
+<path
+   action="A">/Rakefile</path>
+<path
+   action="A">/app/helpers</path>
+<path
+   action="A">/features/step_definitions/search_for_technique_steps.rb</path>
+<path
+   action="A">/db</path>
+<path
+   action="A">/public/javascripts/application.js</path>
+<path
+   action="A">/test/functional/wizard_controller_test.rb</path>
+<path
+   action="A">/app/views/wizard/step4.html.erb</path>
+<path
+   action="A">/script/performance/benchmarker</path>
+<path
+   action="A">/test/functional/users_controller_test.rb</path>
+<path
+   action="A">/vendor/plugins/auto_complete/lib/auto_complete.rb</path>
+<path
+   action="A">/config/locales</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/model_functional_spec.rb</path>
+<path
+   action="A">/app/views/videos/flag.html.erb</path>
+<path
+   action="A">/features/step_definitions/user_videos_steps.rb</path>
+<path
+   action="A">/app/views/tags_controllers/show.html.erb</path>
+<path
+   action="A">/app/controllers/users_controller.rb</path>
+<path
+   action="A">/script/destroy</path>
+<path
+   action="A">/app/controllers/application_controller.rb</path>
+<path
+   action="A">/vendor/plugins/auto_complete/Rakefile</path>
+<path
+   action="A">/app/views/partials/_tag_form.html.erb</path>
+<path
+   action="A">/public/javascripts</path>
+<path
+   action="A">/app/views/wizard/finish.html.erb</path>
+<path
+   action="A">/app/views/users/show.html.erb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/unit_test.rb</path>
+<path
+   action="A">/db/migrate/20090527211600_add_flagged_to_video.rb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/authenticated_test_helper.rb</path>
+<path
+   action="A">/config/initializers/session_store.rb</path>
+<path
+   action="A">/config/environments/test.rb</path>
+<path
+   action="A">/vendor/plugins/auto_complete</path>
+<path
+   action="A">/vendor/plugins</path>
+<path
+   action="A">/public</path>
+<path
+   action="A">/public/images/rails.png</path>
+<path
+   action="A">/app</path>
+<path
+   action="A">/public/images</path>
+<path
+   action="A">/features/video_administration.feature</path>
+<path
+   action="A">/doc/mockup.png</path>
+<path
+   action="A">/db/schema.rb</path>
+<path
+   action="A">/public/404.html</path>
+<path
+   action="A">/config/initializers/mime_types.rb</path>
+<path
+   action="A">/app/controllers/tags_controller.rb</path>
+<path
+   action="A">/config/locales/en.yml</path>
+<path
+   action="A">/test/unit/helpers/welcome_helper_test.rb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/model.rb</path>
+<path
+   action="A">/app/views/tags/index.html.erb</path>
+<path
+   action="A">/config/environments</path>
+<path
+   action="A">/vendor</path>
+<path
+   action="A">/db/migrate/20090504083814_add_youtube_id_to_video.rb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/mailer_test.rb</path>
+<path
+   action="A">/script</path>
+<path
+   action="A">/app/views/videos/edit.html.erb</path>
+<path
+   action="A">/app/views/videos/flagged.html.erb</path>
+<path
+   action="A">/features/tag_video.feature</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/helper.rb</path>
+<path
+   action="A">/vendor/plugins/auto_complete/README</path>
+<path
+   action="A">/public/favicon.ico</path>
+<path
+   action="A">/test/unit/user_test.rb</path>
+<path
+   action="A">/app/views/layouts</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/signup_notification.html.erb</path>
+<path
+   action="A">/test/functional/welcome_controller_test.rb</path>
+<path
+   action="A">/app/views/users/new.html.erb</path>
+<path
+   action="A">/db/migrate/20090506094533_add_technique_to_video.rb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/Rakefile</path>
+<path
+   action="A">/app/views/sessions</path>
+<path
+   action="A">/vendor/plugins/auto_complete/lib</path>
+<path
+   action="A">/app/helpers/importer_helper.rb</path>
+<path
+   action="A">/app/helpers/users_helper.rb</path>
+<path
+   action="A">/app/helpers/application_helper.rb</path>
+<path
+   action="A">/app/controllers/welcome_controller.rb</path>
+<path
+   action="A">/app/models/type.rb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/lib/restful_authentication/rails_commands.rb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/lib/restful_authentication</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/model_helper.rb</path>
+<path
+   action="A">/app/controllers/wizard_controller.rb</path>
+<path
+   action="A">/test/fixtures/types.yml</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/functional_test.rb</path>
+<path
+   action="A">/test/integration</path>
+<path
+   action="A">/db/migrate/20090504081805_create_videos.rb</path>
+<path
+   action="A">/app/views/tags/show.html.erb</path>
+<path
+   action="A">/db/migrate/20090523045918_add_type_to_tags.rb</path>
+<path
+   action="A">/features/tag_types.feature</path>
+<path
+   action="A">/doc/README_FOR_APP</path>
+<path
+   action="A">/features/recommender.feature</path>
+<path
+   action="A">/test/performance/browsing_test.rb</path>
+<path
+   action="A">/features/untag_video.feature</path>
+<path
+   action="A">/test/unit/youtube_importer_test.rb</path>
+<path
+   action="A">/app/views</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/model_functional_test.rb</path>
+<path
+   action="A">/app/views/videos/untagged.html.erb</path>
+<path
+   action="A">/features/list_uncategorized_videos.feature</path>
+<path
+   action="A">/test</path>
+<path
+   action="A">/db/migrate/20090509074541_create_users.rb</path>
+<path
+   action="A">/test/performance</path>
+<path
+   action="A">/app/helpers/tags_helper.rb</path>
+<path
+   action="A">/app/views/partials/_single_tag.html.erb</path>
+<path
+   action="A">/vendor/plugins/auto_complete/init.rb</path>
+<path
+   action="A">/features/support/env.rb</path>
+<path
+   action="A">/config/initializers/new_rails_defaults.rb</path>
+<path
+   action="A">/features/step_definitions/webrat_steps.rb</path>
+<path
+   action="A">/public/422.html</path>
+<path
+   action="A">/config/initializers/inflections.rb</path>
+<path
+   action="A">/vendor/plugins/auto_complete/test</path>
+<path
+   action="A">/features/user_videos.feature</path>
+<path
+   action="A">/db/migrate/20090516131820_add_video_and_user_connection.rb</path>
+<path
+   action="A">/app/controllers/sessions_controller.rb</path>
+<path
+   action="A">/test/unit/helpers/importer_helper_test.rb</path>
+<path
+   action="A">/script/plugin</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/activation.html.erb</path>
+<path
+   action="A">/script/console</path>
+<path
+   action="A">/db/migrate/20090505185033_create_tags.rb</path>
+<path
+   action="A">/app/views/welcome</path>
+<path
+   action="A">/features/support/paths.rb</path>
+<path
+   action="A">/features/step_definitions/list_uncategorized_videos_steps.rb</path>
+<path
+   action="A">/app/views/import/import.html.erb</path>
+<path
+   action="A">/app/views/tags</path>
+<path
+   action="A">/app/helpers/videos_helper.rb</path>
+<path
+   action="A">/db/migrate/20090524084034_create_types.rb</path>
+<path
+   action="A">/app/helpers/welcome_helper.rb</path>
+<path
+   action="A">/script/about</path>
+<path
+   action="A">/lib/tasks/cucumber.rake</path>
+<path
+   action="A">/db/migrate/20090527222900_create_flagged_videos_table.rb</path>
+<path
+   action="A">/app/views/partials/_video_table.html.erb</path>
+<path
+   action="A">/app/helpers/wizard_helper.rb</path>
+<path
+   action="A">/app/views/videos/my_untagged.html.erb</path>
+<path
+   action="A">/features/step_definitions</path>
+<path
+   action="A">/public/500.html</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/migration.rb</path>
+<path
+   action="A">/test/fixtures/tags.yml</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/authenticated_generator.rb</path>
+<path
+   action="A">/app/views/partials/_video_player.html.erb</path>
+<path
+   action="A">/app/views/welcome/index.html.erb</path>
+<path
+   action="A">/db/migrate/20090509172930_add_tags_to_video.rb</path>
+<path
+   action="A">/test/unit/helpers</path>
+<path
+   action="A">/test/unit/helpers/wizard_helper_test.rb</path>
+<path
+   action="A">/tmp</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/USAGE</path>
+<path
+   action="A">/features/step_definitions/tag_video_steps.rb</path>
+<path
+   action="A">/features/step_definitions/search_for_video_steps.rb</path>
+<path
+   action="A">/app/views/videos</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/lib</path>
+<path
+   action="A">/config/boot.rb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators</path>
+<path
+   action="A">/db/migrate/20090527203500_add_isadmin_to_user.rb</path>
+<path
+   action="A">/db/migrate</path>
+<path
+   action="A">/app/models/tag.rb</path>
+<path
+   action="A">/test/functional</path>
+<path
+   action="A">/app/views/tags_controllers/index.html.erb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/authenticated_system.rb</path>
+<path
+   action="A">/app/views/wizard/step1.html.erb</path>
+<path
+   action="A">/app/models/user.rb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/observer.rb</path>
+<path
+   action="A">/public/javascripts/dragdrop.js</path>
+<path
+   action="A">/db/migrate/20090509182801_create_tags_videos.rb</path>
+<path
+   action="A">/app/controllers</path>
+<path
+   action="A">/test/functional/importer_controller_test.rb</path>
+<path
+   action="A">/db/migrate/20090510083003_remove_technique_from_video.rb</path>
+<path
+   action="A">/config/routes.rb</path>
+<path
+   action="A">/app/helpers/sessions_helper.rb</path>
+<path
+   action="A">/vendor/plugins/auto_complete/lib/auto_complete_macros_helper.rb</path>
+<path
+   action="A">/public/stylesheets</path>
+<path
+   action="A">/lib/tasks</path>
+<path
+   action="A">/test/functional/sessions_controller_test.rb</path>
+<path
+   action="A">/app/views/partials</path>
+<path
+   action="A">/README</path>
+<path
+   action="A">/test/unit</path>
+<path
+   action="A">/test/unit/helpers/tags_helper_test.rb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/README</path>
+<path
+   action="A">/app/views/videos/show.html.erb</path>
+<path
+   action="A">/app/views/tags_controllers</path>
+<path
+   action="A">/public/stylesheets/scaffold.css</path>
+<path
+   action="A">/doc</path>
+<path
+   action="A">/script/performance</path>
+<path
+   action="A">/config/database.yml</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/signup.html.erb</path>
+<path
+   action="A">/features/search_for_techniques.feature</path>
+<path
+   action="A">/config/initializers</path>
+<path
+   action="A">/config/environment.rb</path>
+<path
+   action="A">/script/dbconsole</path>
+<path
+   action="A">/app/views/videos/tag.rjs</path>
+<path
+   action="A">/test/unit/type_test.rb</path>
+<path
+   action="A">/app/views/import/show.html.erb</path>
+<path
+   action="A">/log</path>
+<path
+   action="A">/config/environments/production.rb</path>
+<path
+   action="A">/app/views/wizard/step2.html.erb</path>
+<path
+   action="A">/app/controllers/videos_controller.rb</path>
+<path
+   action="A">/public/javascripts/controls.js</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates/unit_spec.rb</path>
+<path
+   action="A">/script/performance/profiler</path>
+<path
+   action="A">/lib/authenticated_test_helper.rb</path>
+<path
+   action="A">/features/support</path>
+<path
+   action="A">/app/views/layouts/application.html.erb</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated/templates</path>
+<path
+   action="A">/public/images/RemoveItemIcon.png</path>
+<path
+   action="A">/vendor/plugins/restful_authentication/generators/authenticated</path>
+<path
+   action="A">/lib/authenticated_system.rb</path>
+<path
+   action="A">/script/generate</path>
+<path
+   action="A">/vendor/plugins/auto_complete/test/auto_complete_test.rb</path>
+</paths>
+<msg>First commit</msg>
+</logentry>
+</log>
