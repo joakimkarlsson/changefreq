@@ -44,7 +44,7 @@ describe Histogram do
     h.frequencies[h.indexes["392-"]][1].should == 1 
   end
   
-  it "a file that's only been changed once (i.e. just added to the repo) is stored correctly" do
+  it "should store a file that's only been changed once (i.e. just added to the repo) is stored correctly" do
     @log.add_changedate_for_path('/the/path', Date.parse('2009-01-01'))
                
     h = Histogram.new(@log)          
