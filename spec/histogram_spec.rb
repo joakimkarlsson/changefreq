@@ -53,5 +53,4 @@ describe Histogram do
       
   end     
     
-
 end
