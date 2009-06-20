@@ -16,7 +16,7 @@ describe Histogram do
     
     h = Histogram.new(@log)
  
-    h.frequencies[0][1].should == 1  
+    h.frequencies[0].count.should == 1  
   end 
   
   it "should put a file changed within 7 days correctly in the histogram" do
@@ -26,7 +26,7 @@ describe Histogram do
                
     h = Histogram.new(@log)          
                
-    h.frequencies[7][1].should == 1      
+    h.frequencies[7].count.should == 1      
   end 
   
   it "should put a file changed after over a year last in the histogram" do
@@ -35,8 +35,9 @@ describe Histogram do
     @log.parse(@given.test_data.to_xml) 
                
     h = Histogram.new(@log)          
-               
-    h.frequencies[h.indexes["392-"]][1].should == 1      
+                           
+    h.frequencies[-2].name.should == "392 days and up"
+    h.frequencies[-2].count.should == 1      
   
   end  
     
@@ -45,8 +46,9 @@ describe Histogram do
     @log.parse(@given.test_data.to_xml) 
                
     h = Histogram.new(@log)          
-               
-    h.frequencies[h.indexes["once"]][1].should == 1 
+    
+    h.frequencies[-1].name.should == "Files never changed"           
+    h.frequencies[-1].count.should ==1 
       
   end     
     
