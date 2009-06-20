@@ -24,7 +24,7 @@ class ChangeStats < CommandLine::Application
     
     f = histogram.frequencies
     f.each do |freq|
-      puts "#{freq[0]}\t#{freq[1]}" 
+      puts "#{freq.name}\t#{freq.count}" 
     end
    
   end
