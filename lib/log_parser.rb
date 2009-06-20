@@ -5,7 +5,8 @@ class LogParser
   attr_reader :paths
   
   def initialize
-    @paths = {}
+    @paths = {} 
+    @filter = nil
   end
   
   def parse(input)     

@@ -1,29 +1,35 @@
 #!/usr/bin/env ruby -wKU
 
+require 'rubygems' 
+require 'commandline'
 require 'lib/log_parser'
 require 'lib/histogram'
-                         
-logfile = ARGV[0]
 
-xml = File.open(logfile).read 
-log_parser = LogParser.new 
-log_parser.parse(xml) 
-      
-histogram = Histogram.new(log_parser)
-                                    
-f = histogram.frequencies
-f.each do |freq|
-  print "#{freq[1]}\t" 
+class ChangeStats < CommandLine::Application
+  def initialize
+    synopsis "[--filter <filter>] logfile"
+    options :help
+    option :names => "--filter", :opt_found => get_args,
+     :opt_description => "Filter for what files to include (e.g. *.cpp;*.h)",
+     :arg_description => "filter"
+    expected_args :logfile
+  end                    
+  
+  def main    
+    log = LogParser.new
+    log.filter = opt.filter
+    log.parse(File.open(@logfile).read)
+    
+    histogram = Histogram.new(log)
+    
+    f = histogram.frequencies
+    f.each do |freq|
+      puts "#{freq[0]}\t#{freq[1]}" 
+    end
+   
+  end
 end
-
-puts
-
-f.each do |freq|
-  print "#{freq[0]}\t" 
-end 
-
-puts
-
+                         
 
 
 
