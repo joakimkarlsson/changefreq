@@ -11,7 +11,7 @@ class ChangeStats < CommandLine::Application
     options :help
     option :names => "--filter", :opt_found => get_args,
      :opt_description => "Filter for what files to include (e.g. *.cpp;*.h)",
-     :arg_description => "filter"
+     :arg_description => "filter", :opt_not_found => ""
     expected_args :logfile
   end                    
   
@@ -24,9 +24,15 @@ class ChangeStats < CommandLine::Application
     
     f = histogram.frequencies
     f.each do |freq|
-      puts "#{freq.name}\t#{freq.count}" 
+      print "#{freq.name}\t" 
     end
-   
+    
+    puts
+     
+    f = histogram.frequencies
+    f.each do |freq|
+      print "#{freq.count}\t" 
+    end   
   end
 end
                          

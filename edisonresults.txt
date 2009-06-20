@@ -1,0 +1,2 @@
+0 days	1 days	2 days	3 days	4 days	5 days	6 days	7 days	8 days	9 days	10 days	11 days	12 days	13 days	14-20 days	21-27 days	28-34 days	35-55 days	56-76 days	77-97 days	98-139 days	140-181 days	182-223 days	224-307 days	308-391 days	392 days and up	Files never changed	
+194	187	47	49	48	56	36	27	11	4	6	2	9	4	43	41	8	34	60	11	0	0	0	0	0	0	2742	
