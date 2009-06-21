@@ -16,7 +16,7 @@ class ChangeStats < CommandLine::Application
   end                    
   
   def main    
-    log = LogParser.new
+    log = SvnLogParser.new
     log.filter = opt.filter
     log.parse(File.open(@logfile))
     
