@@ -30,7 +30,7 @@ class TestData
       @lines << "r1 | user | " + entry.date.to_s + " 22:08:01 +0200 (Thu, 28 May 2009) | 1 line"
       @lines << "Changed paths"
       entry.paths.each do |path|
-        @lines << "M " + path
+        @lines << "  M " + path
       end 
       @lines << ""
     end 

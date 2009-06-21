@@ -9,23 +9,18 @@ class LogParser
     @filter = nil
   end
   
-  def parse(input)
-    while true
-      comment = input.readline
-      separator = input.readline
-      info = input.readline
-      info_fields = info.split('|') 
-      revision = info_fields[0].strip
-      user = info_fields[1].strip
-      date = Date.parse(info_fields[2].strip.split(' ')[0]) 
-      lines = info_fields[3].strip
+  def parse(input) 
+    while true 
+      info = find_info_line(input)
+      
+      date = Date.parse(info.split('|')[2].strip.split(' ')[0]) 
     
       changed_paths_header = input.readline
 
-      path = input.readline
+      path = input.readline.strip
       until path.empty?
-        add_changedate_for_path(path[2, path.length-1], date) if matches_filter(path)
-        path = input.readline
+        add_changedate_for_path(path.strip[2, path.length-1], date) if matches_filter(path)
+        path = input.readline.strip
         end
       
       line = input.readline 
@@ -33,15 +28,24 @@ class LogParser
     
     rescue EOFError
   
-  end  
+  end    
+  
+  def find_info_line(input)
+    while true
+      line = input.readline
+      return input.readline if line[0, 10] == '----------'
+    end
+  end
   
   def add_changedate_for_path(path, date) 
+    puts "Adding #{date} to #{path}"
     @paths[path] ||= []
     @paths[path].insert(0, date)  
   end 
 
-  def filter=(filters)
-    @filter = filters.split(';')
+  def filter=(filters) 
+    @filter = nil
+    @filter = filters.split(';') unless filters == nil || filters == ""
   end
   
   def matches_filter(text) 
