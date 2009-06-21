@@ -34,8 +34,8 @@ class Histogram
       Frequency.new("140-181 days", 140, 181), Frequency.new("182-223 days", 182, 223), Frequency.new("224-307 days", 224, 307),
       Frequency.new("308-391 days", 308, 391), Frequency.new("392 days and up", 392, 9998), Frequency.new("Files never changed", 9999, 9999)]
       
-      
-    log.paths.each do |path,dates|  
+    log.paths.each do |path,dates|
+
       if dates.size == 1 
         add_frequency_for(9999)  
       end

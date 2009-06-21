@@ -37,8 +37,6 @@ class ChangeStats < CommandLine::Application
   end
 end
 
-cs = ChangeStats.new
-cs.main
                          
 
 

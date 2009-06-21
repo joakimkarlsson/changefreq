@@ -13,8 +13,6 @@ class LogParser
     while true 
       info = find_info_line(input)
 
-      puts "Parsing revision #{info.split('|')[0].strip}"
-
       date = Date.parse(info.split('|')[2].strip.split(' ')[0]) 
     
       changed_paths_header = readline_from(input)
