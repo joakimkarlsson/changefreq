@@ -22,21 +22,26 @@ class TestData
     logentry
   end
   
-  def to_xml
-    xml = '<log>'
-    @logentries.each do |entry| 
-      xml += '<logentry>'
-      xml += '<date>' + entry.date + '</date>'
-      xml += '<paths>'
+  def start
+    @lines = []
+    @logentries.each do |entry|
+      @lines << "Commit message"
+      @lines << "------------------------------------------------------------------------"
+      @lines << "r1 | user | " + entry.date.to_s + " 22:08:01 +0200 (Thu, 28 May 2009) | 1 line"
+      @lines << "Changed paths"
       entry.paths.each do |path|
-        xml += '<path>' + path + '</path>'
-      end                                   
-      xml += '</paths>'
-      xml += '</logentry>'
+        @lines << "M " + path
+      end 
+      @lines << ""
     end 
-    xml += '</log>'
-    xml
+    @current_line = 0  
   end
+  
+  def readline 
+    raise EOFError if @current_line >= @lines.length
+    @current_line += 1
+    @lines[@current_line-1]
+  end  
 
 end 
 
