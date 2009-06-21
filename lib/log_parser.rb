@@ -10,9 +10,8 @@ class LogParser
   end
   
   def parse(input)
-    line = input.readline
     while true
-      comment = line
+      comment = input.readline
       separator = input.readline
       info = input.readline
       info_fields = info.split('|') 

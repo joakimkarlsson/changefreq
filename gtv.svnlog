@@ -1,0 +1,523 @@
+------------------------------------------------------------------------
+r29 | ata | 2009-06-13 23:54:35 +0200 (Sat, 13 Jun 2009) | 1 line
+Changed paths:
+   M /app/controllers/tags_controller.rb
+   M /app/models/video.rb
+   A /app/views/tags/feed.rxml
+   M /app/views/tags/show.html.erb
+   M /config/routes.rb
+   A /public/images/rss.jpg
+
+RSS feeds for the win
+------------------------------------------------------------------------
+r28 | ata | 2009-06-13 22:11:51 +0200 (Sat, 13 Jun 2009) | 1 line
+Changed paths:
+   M /app/models/recommender.rb
+
+Use kick-ass SQL instead of ActiveRecord
+------------------------------------------------------------------------
+r27 | ata | 2009-06-13 19:56:04 +0200 (Sat, 13 Jun 2009) | 1 line
+Changed paths:
+   M /app/views/layouts/application.html.erb
+
+Number of videos
+------------------------------------------------------------------------
+r26 | ata | 2009-06-13 19:40:29 +0200 (Sat, 13 Jun 2009) | 1 line
+Changed paths:
+   M /app/models/video.rb
+   M /app/models/youtube_importer.rb
+   M /features/recommender.feature
+   M /features/video_administration.feature
+
+Import from a user works again
+------------------------------------------------------------------------
+r25 | ata | 2009-06-13 08:09:45 +0200 (Sat, 13 Jun 2009) | 1 line
+Changed paths:
+   M /app/models/recommender.rb
+   M /config/environment.rb
+
+
+------------------------------------------------------------------------
+r24 | ata | 2009-06-12 22:55:38 +0200 (Fri, 12 Jun 2009) | 1 line
+Changed paths:
+   M /app/models/recommender.rb
+
+yo
+------------------------------------------------------------------------
+r23 | ata | 2009-06-12 22:19:56 +0200 (Fri, 12 Jun 2009) | 1 line
+Changed paths:
+   M /app/models/recommender.rb
+   M /config/environment.rb
+
+Jo
+------------------------------------------------------------------------
+r22 | ata | 2009-06-12 21:51:52 +0200 (Fri, 12 Jun 2009) | 1 line
+Changed paths:
+   M /app/models/recommender.rb
+   M /app/models/video.rb
+   M /app/models/youtube_importer.rb
+   M /app/views/videos/show.html.erb
+   M /db/schema.rb
+   M /features/recommender.feature
+   M /features/tag_video.feature
+
+Recommendations clickable
+------------------------------------------------------------------------
+r21 | ata | 2009-06-12 19:52:26 +0200 (Fri, 12 Jun 2009) | 1 line
+Changed paths:
+   M /app/models/youtube_importer.rb
+
+include REXML was fscking up code trying to read comments.
+------------------------------------------------------------------------
+r20 | ata | 2009-06-12 19:34:53 +0200 (Fri, 12 Jun 2009) | 1 line
+Changed paths:
+   M /app/controllers/tags_controller.rb
+   M /app/models/recommender.rb
+   M /features/support/paths.rb
+   M /features/tag_video.feature
+   M /test/unit/recommender_test.rb
+
+Multi taggar funkar
+------------------------------------------------------------------------
+r19 | ata | 2009-06-09 22:20:58 +0200 (Tue, 09 Jun 2009) | 1 line
+Changed paths:
+   M /app/models/recommender.rb
+   M /test/unit/recommender_test.rb
+
+Added code for recommendations
+------------------------------------------------------------------------
+r18 | ata | 2009-06-09 21:47:44 +0200 (Tue, 09 Jun 2009) | 1 line
+Changed paths:
+   M /app/controllers/videos_controller.rb
+   M /app/models/recommender.rb
+   M /app/views/videos/show.html.erb
+
+Added code for recommendations
+------------------------------------------------------------------------
+r17 | ata | 2009-06-08 22:53:20 +0200 (Mon, 08 Jun 2009) | 1 line
+Changed paths:
+   M /app/controllers/videos_controller.rb
+   A /app/models/recommender.rb
+   M /app/models/tag.rb
+   M /app/models/type.rb
+   M /app/models/video.rb
+   M /app/views/videos/_single_comment.html.erb
+   M /app/views/videos/show.html.erb
+   M /config/environment.rb
+   M /features/recommender.feature
+   M /features/step_definitions/all_steps.rb
+   A /test/unit/recommender_test.rb
+   D /test/unit/tag_test.rb
+   D /test/unit/type_test.rb
+   D /test/unit/youtube_importer_test.rb
+
+Added code for recommendations
+------------------------------------------------------------------------
+r16 | ata | 2009-06-06 22:08:24 +0200 (Sat, 06 Jun 2009) | 1 line
+Changed paths:
+   D /features/comments.feature
+   M /features/video_administration.feature
+
+Fixed tests
+------------------------------------------------------------------------
+r15 | ata | 2009-06-06 22:02:00 +0200 (Sat, 06 Jun 2009) | 1 line
+Changed paths:
+   M /
+   M /app/controllers/videos_controller.rb
+   M /app/models/video.rb
+   M /app/views/videos/show.html.erb
+
+Some cleaning
+------------------------------------------------------------------------
+r14 | ata | 2009-06-02 23:31:07 +0200 (Tue, 02 Jun 2009) | 1 line
+Changed paths:
+   M /app/models/youtube_importer.rb
+   M /test/unit/video_test.rb
+
+Fixade de sista testen
+------------------------------------------------------------------------
+r13 | ata | 2009-06-02 23:24:13 +0200 (Tue, 02 Jun 2009) | 1 line
+Changed paths:
+   M /app/controllers/sessions_controller.rb
+   M /app/models/youtube_importer.rb
+   M /doc/stories
+   D /test/functional/sessions_controller_test.rb
+   M /test/unit/video_test.rb
+
+fixat några test
+------------------------------------------------------------------------
+r12 | joakim | 2009-06-01 22:24:44 +0200 (Mon, 01 Jun 2009) | 1 line
+Changed paths:
+   M /app/controllers/videos_controller.rb
+   M /features/support/paths.rb
+   M /features/user_videos.feature
+
+Added error handling when creating a new video with an invalid youtube id
+------------------------------------------------------------------------
+r11 | ata | 2009-05-31 23:36:48 +0200 (Sun, 31 May 2009) | 1 line
+Changed paths:
+   M /app/views/videos/comment.rjs
+   M /app/views/videos/show.html.erb
+
+AJAX kommentarer FTW
+------------------------------------------------------------------------
+r10 | ata | 2009-05-31 23:20:11 +0200 (Sun, 31 May 2009) | 1 line
+Changed paths:
+   M /app/controllers/videos_controller.rb
+   M /app/models/comment.rb
+   A /app/views/videos/_single_comment.html.erb
+   A /app/views/videos/comment.rjs
+   M /app/views/videos/show.html.erb
+   M /config/routes.rb
+
+AJAX kommentarer FTW
+------------------------------------------------------------------------
+r9 | ata | 2009-05-31 22:52:20 +0200 (Sun, 31 May 2009) | 1 line
+Changed paths:
+   A /app/models/comment.rb
+   M /app/models/user.rb
+   M /app/models/video.rb
+   M /app/views/videos/show.html.erb
+   A /db/migrate/20090531202252_create_comments.rb
+   A /db/migrate/20090531204637_add_user_to_comments.rb
+   M /db/schema.rb
+   A /features/comments.feature
+   A /test/fixtures/comments.yml
+   A /test/unit/comment_test.rb
+
+Läsa kommentarer går bra. Ska snart fixa skrivandet av dem...
+------------------------------------------------------------------------
+r8 | ata | 2009-05-31 22:02:57 +0200 (Sun, 31 May 2009) | 1 line
+Changed paths:
+   M /app/models/video.rb
+   M /app/views/partials/_single_tag.html.erb
+   M /doc/stories
+   M /features/login.feature
+   A /features/step_definitions/all_steps.rb
+   D /features/step_definitions/list_uncategorized_videos_steps.rb
+   D /features/step_definitions/search_for_technique_steps.rb
+   D /features/step_definitions/search_for_video_steps.rb
+   D /features/step_definitions/tag_video_steps.rb
+   D /features/step_definitions/user_videos_steps.rb
+   D /features/step_definitions/video_administration_steps.rb
+   M /features/support/env.rb
+   D /features/untag_video.feature
+   M /features/video_administration.feature
+
+städade testen lite
+------------------------------------------------------------------------
+r7 | ata | 2009-05-31 11:13:22 +0200 (Sun, 31 May 2009) | 1 line
+Changed paths:
+   M /app/controllers/sessions_controller.rb
+   M /db/schema.rb
+   M /features/support/env.rb
+
+fixade testen
+------------------------------------------------------------------------
+r6 | ata | 2009-05-31 10:59:34 +0200 (Sun, 31 May 2009) | 1 line
+Changed paths:
+   M /app/controllers/videos_controller.rb
+   M /app/models/youtube_importer.rb
+   M /app/views/videos/show.html.erb
+   A /db/migrate/20090530213652_add_rating_to_video.rb
+   M /db/schema.rb
+   M /doc/stories
+
+Hämtar och visar average rating
+------------------------------------------------------------------------
+r5 | ata | 2009-05-30 22:44:50 +0200 (Sat, 30 May 2009) | 1 line
+Changed paths:
+   M /app/controllers/sessions_controller.rb
+   M /app/views/layouts/application.html.erb
+   M /app/views/partials/_single_tag.html.erb
+   M /db/migrate/20090527203500_add_isadmin_to_user.rb
+   M /db/migrate/20090527211600_add_flagged_to_video.rb
+   M /db/schema.rb
+   A /features/login.feature
+   M /features/search_for_video.feature
+   M /features/step_definitions/user_videos_steps.rb
+   M /features/support/env.rb
+   M /features/support/paths.rb
+   M /features/untag_video.feature
+
+Login puttar tillbaks till referer
+------------------------------------------------------------------------
+r4 | ata | 2009-05-30 22:04:49 +0200 (Sat, 30 May 2009) | 1 line
+Changed paths:
+   M /app/controllers/tags_controller.rb
+   M /app/controllers/videos_controller.rb
+   M /app/views/partials/_single_tag.html.erb
+   M /app/views/videos/show.html.erb
+   A /app/views/videos/untag.rjs
+   M /doc/stories
+
+Delete tags ajaxifierat
+------------------------------------------------------------------------
+r3 | ata | 2009-05-30 21:05:50 +0200 (Sat, 30 May 2009) | 1 line
+Changed paths:
+   M /app/controllers/tags_controller.rb
+   M /app/controllers/videos_controller.rb
+   M /app/models/video.rb
+   M /app/views/videos/show.html.erb
+
+Recommendations now find the 3 best matches
+------------------------------------------------------------------------
+r2 | ata | 2009-05-30 13:03:38 +0200 (Sat, 30 May 2009) | 1 line
+Changed paths:
+   M /
+   A /.gems
+   M /app/models/video.rb
+   M /db
+   M /doc/stories
+   M /log
+   M /tmp
+
+Mindre städning
+------------------------------------------------------------------------
+r1 | ata | 2009-05-28 22:08:01 +0200 (Thu, 28 May 2009) | 1 line
+Changed paths:
+   A /README
+   A /Rakefile
+   A /app
+   A /app/controllers
+   A /app/controllers/application_controller.rb
+   A /app/controllers/import_controller.rb
+   A /app/controllers/sessions_controller.rb
+   A /app/controllers/tags_controller.rb
+   A /app/controllers/users_controller.rb
+   A /app/controllers/videos_controller.rb
+   A /app/controllers/welcome_controller.rb
+   A /app/controllers/wizard_controller.rb
+   A /app/helpers
+   A /app/helpers/application_helper.rb
+   A /app/helpers/importer_helper.rb
+   A /app/helpers/sessions_helper.rb
+   A /app/helpers/tags_helper.rb
+   A /app/helpers/users_helper.rb
+   A /app/helpers/videos_helper.rb
+   A /app/helpers/welcome_helper.rb
+   A /app/helpers/wizard_helper.rb
+   A /app/models
+   A /app/models/tag.rb
+   A /app/models/type.rb
+   A /app/models/user.rb
+   A /app/models/video.rb
+   A /app/models/youtube_importer.rb
+   A /app/views
+   A /app/views/import
+   A /app/views/import/import.html.erb
+   A /app/views/import/show.html.erb
+   A /app/views/layouts
+   A /app/views/layouts/application.html.erb
+   A /app/views/partials
+   A /app/views/partials/_single_tag.html.erb
+   A /app/views/partials/_tag_form.html.erb
+   A /app/views/partials/_video_player.html.erb
+   A /app/views/partials/_video_table.html.erb
+   A /app/views/session
+   A /app/views/sessions
+   A /app/views/tags
+   A /app/views/tags/edit.html.erb
+   A /app/views/tags/index.html.erb
+   A /app/views/tags/index.js.erb
+   A /app/views/tags/new.html.erb
+   A /app/views/tags/show.html.erb
+   A /app/views/tags_controllers
+   A /app/views/tags_controllers/index.html.erb
+   A /app/views/tags_controllers/show.html.erb
+   A /app/views/users
+   A /app/views/users/new.html.erb
+   A /app/views/users/show.html.erb
+   A /app/views/videos
+   A /app/views/videos/edit.html.erb
+   A /app/views/videos/find.html.erb
+   A /app/views/videos/flag.html.erb
+   A /app/views/videos/flagged.html.erb
+   A /app/views/videos/index.html.erb
+   A /app/views/videos/my_untagged.html.erb
+   A /app/views/videos/new.html.erb
+   A /app/views/videos/show.html.erb
+   A /app/views/videos/tag.rjs
+   A /app/views/videos/untagged.html.erb
+   A /app/views/welcome
+   A /app/views/welcome/index.html.erb
+   A /app/views/wizard
+   A /app/views/wizard/finish.html.erb
+   A /app/views/wizard/step1.html.erb
+   A /app/views/wizard/step2.html.erb
+   A /app/views/wizard/step3.html.erb
+   A /app/views/wizard/step4.html.erb
+   A /config
+   A /config/boot.rb
+   A /config/database.yml
+   A /config/environment.rb
+   A /config/environments
+   A /config/environments/development.rb
+   A /config/environments/production.rb
+   A /config/environments/test.rb
+   A /config/initializers
+   A /config/initializers/backtrace_silencers.rb
+   A /config/initializers/inflections.rb
+   A /config/initializers/mime_types.rb
+   A /config/initializers/new_rails_defaults.rb
+   A /config/initializers/session_store.rb
+   A /config/locales
+   A /config/locales/en.yml
+   A /config/routes.rb
+   A /db
+   A /db/migrate
+   A /db/migrate/20090504081805_create_videos.rb
+   A /db/migrate/20090504083814_add_youtube_id_to_video.rb
+   A /db/migrate/20090505185033_create_tags.rb
+   A /db/migrate/20090506094533_add_technique_to_video.rb
+   A /db/migrate/20090509074541_create_users.rb
+   A /db/migrate/20090509172930_add_tags_to_video.rb
+   A /db/migrate/20090509182801_create_tags_videos.rb
+   A /db/migrate/20090510083003_remove_technique_from_video.rb
+   A /db/migrate/20090516131820_add_video_and_user_connection.rb
+   A /db/migrate/20090523045918_add_type_to_tags.rb
+   A /db/migrate/20090524084034_create_types.rb
+   A /db/migrate/20090524163105_add_types.rb
+   A /db/migrate/20090527203500_add_isadmin_to_user.rb
+   A /db/migrate/20090527211600_add_flagged_to_video.rb
+   A /db/migrate/20090527222900_create_flagged_videos_table.rb
+   A /db/schema.rb
+   A /doc
+   A /doc/README_FOR_APP
+   A /doc/mockup.png
+   A /doc/stories
+   A /features
+   A /features/list_uncategorized_videos.feature
+   A /features/recommender.feature
+   A /features/search_for_techniques.feature
+   A /features/search_for_video.feature
+   A /features/step_definitions
+   A /features/step_definitions/list_uncategorized_videos_steps.rb
+   A /features/step_definitions/search_for_technique_steps.rb
+   A /features/step_definitions/search_for_video_steps.rb
+   A /features/step_definitions/tag_video_steps.rb
+   A /features/step_definitions/user_videos_steps.rb
+   A /features/step_definitions/video_administration_steps.rb
+   A /features/step_definitions/webrat_steps.rb
+   A /features/support
+   A /features/support/env.rb
+   A /features/support/paths.rb
+   A /features/tag_types.feature
+   A /features/tag_video.feature
+   A /features/tag_wizard.feature
+   A /features/untag_video.feature
+   A /features/user_videos.feature
+   A /features/video_administration.feature
+   A /lib
+   A /lib/authenticated_system.rb
+   A /lib/authenticated_test_helper.rb
+   A /lib/tasks
+   A /lib/tasks/cucumber.rake
+   A /log
+   A /public
+   A /public/404.html
+   A /public/422.html
+   A /public/500.html
+   A /public/favicon.ico
+   A /public/images
+   A /public/images/RemoveItemIcon.png
+   A /public/images/rails.png
+   A /public/javascripts
+   A /public/javascripts/application.js
+   A /public/javascripts/controls.js
+   A /public/javascripts/dragdrop.js
+   A /public/javascripts/effects.js
+   A /public/javascripts/prototype.js
+   A /public/robots.txt
+   A /public/stylesheets
+   A /public/stylesheets/scaffold.css
+   A /script
+   A /script/about
+   A /script/console
+   A /script/cucumber
+   A /script/dbconsole
+   A /script/destroy
+   A /script/generate
+   A /script/performance
+   A /script/performance/benchmarker
+   A /script/performance/profiler
+   A /script/plugin
+   A /script/runner
+   A /script/server
+   A /test
+   A /test/fixtures
+   A /test/fixtures/tags.yml
+   A /test/fixtures/types.yml
+   A /test/fixtures/users.yml
+   A /test/fixtures/videos.yml
+   A /test/functional
+   A /test/functional/importer_controller_test.rb
+   A /test/functional/sessions_controller_test.rb
+   A /test/functional/tags_controller_test.rb
+   A /test/functional/users_controller_test.rb
+   A /test/functional/welcome_controller_test.rb
+   A /test/functional/wizard_controller_test.rb
+   A /test/integration
+   A /test/performance
+   A /test/performance/browsing_test.rb
+   A /test/test_helper.rb
+   A /test/unit
+   A /test/unit/helpers
+   A /test/unit/helpers/importer_helper_test.rb
+   A /test/unit/helpers/tags_helper_test.rb
+   A /test/unit/helpers/welcome_helper_test.rb
+   A /test/unit/helpers/wizard_helper_test.rb
+   A /test/unit/tag_test.rb
+   A /test/unit/type_test.rb
+   A /test/unit/user_test.rb
+   A /test/unit/video_test.rb
+   A /test/unit/youtube_importer_test.rb
+   A /tmp
+   A /vendor
+   A /vendor/plugins
+   A /vendor/plugins/auto_complete
+   A /vendor/plugins/auto_complete/README
+   A /vendor/plugins/auto_complete/Rakefile
+   A /vendor/plugins/auto_complete/init.rb
+   A /vendor/plugins/auto_complete/lib
+   A /vendor/plugins/auto_complete/lib/auto_complete.rb
+   A /vendor/plugins/auto_complete/lib/auto_complete_macros_helper.rb
+   A /vendor/plugins/auto_complete/test
+   A /vendor/plugins/auto_complete/test/auto_complete_test.rb
+   A /vendor/plugins/restful_authentication
+   A /vendor/plugins/restful_authentication/README
+   A /vendor/plugins/restful_authentication/Rakefile
+   A /vendor/plugins/restful_authentication/generators
+   A /vendor/plugins/restful_authentication/generators/authenticated
+   A /vendor/plugins/restful_authentication/generators/authenticated/USAGE
+   A /vendor/plugins/restful_authentication/generators/authenticated/authenticated_generator.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/activation.html.erb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/authenticated_system.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/authenticated_test_helper.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/controller.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/fixtures.yml
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/functional_spec.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/functional_test.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/helper.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/login.html.erb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/mailer.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/mailer_test.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/migration.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/model.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/model_controller.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/model_functional_spec.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/model_functional_test.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/model_helper.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/observer.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/signup.html.erb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/signup_notification.html.erb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/unit_spec.rb
+   A /vendor/plugins/restful_authentication/generators/authenticated/templates/unit_test.rb
+   A /vendor/plugins/restful_authentication/install.rb
+   A /vendor/plugins/restful_authentication/lib
+   A /vendor/plugins/restful_authentication/lib/restful_authentication
+   A /vendor/plugins/restful_authentication/lib/restful_authentication/rails_commands.rb
+
+First commit
+------------------------------------------------------------------------

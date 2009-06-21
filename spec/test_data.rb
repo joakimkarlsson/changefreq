@@ -35,6 +35,14 @@ class TestData
       @lines << ""
     end 
     @current_line = 0  
+  end  
+  
+  def to_s
+    str = ""
+    @lines.each do |line|
+      str += line + "\n"
+    end                 
+    str
   end
   
   def readline 

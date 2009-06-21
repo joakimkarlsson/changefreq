@@ -12,8 +12,8 @@ describe Histogram do
   it "should collect a file change within a day in category 0" do 
     @given.test_data.with.logentry.at_date('2009-01-01').with.path('/the path')
     @given.test_data.with.logentry.at_date('2009-01-01').with.path('/the path')  
-    @given.test_data.start
-                            
+    @given.test_data.start               
+                
     @log.parse(@given.test_data) 
     
     h = Histogram.new(@log)

@@ -18,7 +18,7 @@ class ChangeStats < CommandLine::Application
   def main    
     log = LogParser.new
     log.filter = opt.filter
-    log.parse(File.open(@logfile).read)
+    log.parse(File.open(@logfile))
     
     histogram = Histogram.new(log)
     
