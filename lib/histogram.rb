@@ -1,6 +1,3 @@
-#0 1 2 3 4 5 6 7 8 9 10 11 12 13 14- 21- 28- 35- 56- 77- 98- 140- 182- 224- 308- 392- 
-#1                               7   7   7   21  21  21  42  42   42   84   84   
-   
 class Frequency    
   attr_reader :count, :name, :lower_limit, :upper_limit
   

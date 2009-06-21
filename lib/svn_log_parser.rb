@@ -1,7 +1,4 @@
-require 'rexml/document'
-require 'date' 
-
-class LogParser  
+class SvnLogParser  
   attr_reader :paths
   
   def initialize

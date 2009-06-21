@@ -1,11 +1,11 @@
 require 'lib/histogram'
-require 'lib/log_parser'
+require 'lib/svn_log_parser'
 require 'spec/test_data'
 
 describe Histogram do
 
   before(:each) do     
-    @log = LogParser.new
+    @log = SvnLogParser.new
     @given = Given.new
   end
 
