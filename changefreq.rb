@@ -17,8 +17,7 @@ class ChangeStats < CommandLine::Application
   
   def main    
     log = LogParser.new
-    log.filter = "" #opt.filter
-    @logfile = "python.svnlog"
+    log.filter = opt.filter
     log.parse(File.open(@logfile))
     
     histogram = Histogram.new(log)

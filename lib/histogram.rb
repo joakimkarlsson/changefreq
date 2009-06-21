@@ -46,7 +46,8 @@ class Histogram
         i -= 1
       end
     end    
-  end    
+  end       
+ 
   
   def add_frequency_for(delta)
     @frequencies.each do |freq|

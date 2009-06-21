@@ -15,31 +15,23 @@ class LogParser
 
       date = Date.parse(info.split('|')[2].strip.split(' ')[0]) 
     
-      changed_paths_header = readline_from(input)
+      changed_paths_header = input.readline
 
-      path = readline_from(input).strip
+      path = input.readline.strip
       until path.empty?
         add_changedate_for_path(path.strip[2, path.length-1], date) if matches_filter(path)
-        path = readline_from(input).strip
+        path = input.readline.strip
         end 
     end
     
     rescue EOFError
   
   end
-
-  def readline_from(input)
-    line = input.readline
-    if line.nil?
-      puts "Read nil line!"
-    end
-    line
-  end
   
   def find_info_line(input)
     while true
-      line = readline_from(input)
-      return readline_from(input) if line.strip == '------------------------------------------------------------------------'
+      line = input.readline
+      return input.readline if line.strip == '------------------------------------------------------------------------'
     end
   end
   
