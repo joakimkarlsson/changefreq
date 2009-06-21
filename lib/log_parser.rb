@@ -12,33 +12,40 @@ class LogParser
   def parse(input) 
     while true 
       info = find_info_line(input)
-      
+
+      puts "Parsing revision #{info.split('|')[0].strip}"
+
       date = Date.parse(info.split('|')[2].strip.split(' ')[0]) 
     
-      changed_paths_header = input.readline
+      changed_paths_header = readline_from(input)
 
-      path = input.readline.strip
+      path = readline_from(input).strip
       until path.empty?
         add_changedate_for_path(path.strip[2, path.length-1], date) if matches_filter(path)
-        path = input.readline.strip
-        end
-      
-      line = input.readline 
+        path = readline_from(input).strip
+        end 
     end
     
     rescue EOFError
   
-  end    
+  end
+
+  def readline_from(input)
+    line = input.readline
+    if line.nil?
+      puts "Read nil line!"
+    end
+    line
+  end
   
   def find_info_line(input)
     while true
-      line = input.readline
-      return input.readline if line[0, 10] == '----------'
+      line = readline_from(input)
+      return readline_from(input) if line.strip == '------------------------------------------------------------------------'
     end
   end
   
   def add_changedate_for_path(path, date) 
-    puts "Adding #{date} to #{path}"
     @paths[path] ||= []
     @paths[path].insert(0, date)  
   end 
